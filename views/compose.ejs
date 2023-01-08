@@ -1,0 +1,36 @@
+<%- include('partials/header'); -%>
+<h1>compose</h1>
+<!-- <form action="/compose" method="post">
+  <input
+    type="text"
+    class=""
+    name="composeTitel"
+    placeholder="enter text here"
+  />
+  <button type="submit" class="" value="">Add</button>
+</form> -->
+
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id=""
+      name="postTitle"
+      placeholder="Enter title"
+    />
+  </div>
+  <div class="form-group">
+    <label for="multilineText">Password</label>
+    <textarea
+      class="form-control"
+      rows="3"
+      placeholder="enter text here"
+      name="postBody"
+      required
+    ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%- include('partials/footer'); -%>
